@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Choose the Number</title>
+  <link rel="icon" href="n_icon.png" type="image/png" />
+  <link rel="stylesheet" href="gameStyle.css" />
+</head>
+<body>
+<div class="box">
+  <h1>Guess the Number</h1>
+  <p class="sub">Between 1 and 100 — you get 5 tries.</p>
+
+  <label for="inp">Your guess</label>
+  <input type="number" id="inp" min="1" max="100" placeholder="e.g. 42" />
+  <button id="btn" onclick="guess()">Submit</button>
+
+  <div class="msg" id="msg"></div>
+  <div class="tries" id="tries"></div>
+  <div class="history" id="hist"></div>
+
+  <button class="restart" id="restartBtn" style="display:none" onclick="reset()">Play again</button>
+</div>
+
+<script src="scriptFile.js"></script>
+</body>
+</html> 

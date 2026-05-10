@@ -1,0 +1,114 @@
+body {
+  font-family: Georgia, serif;
+  background: #f5f0e8;
+  display: flex;
+  justify-content: center;
+  padding: 60px 16px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.box {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 36px 32px;
+  max-width: 380px;
+  width: 100%;
+  height: fit-content;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0 0 4px;
+  font-weight: normal;
+  color: #222;
+}
+
+.sub {
+  font-size: 13px;
+  color: #888;
+  margin: 0 0 28px;
+  font-family: Arial, sans-serif;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  color: #555;
+  font-family: Arial, sans-serif;
+  margin-bottom: 6px;
+}
+
+input[type="number"] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  padding: 9px 12px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #222;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+input[type="number"]:focus {
+  border-color: #777;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button { -webkit-appearance: none; }
+input { -moz-appearance: textfield; }
+
+button {
+  width: 100%;
+  background: #2a2a2a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+
+button:hover { background: #444; }
+button:disabled { background: #aaa; cursor: default; }
+
+.msg {
+  margin-top: 18px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  min-height: 20px;
+}
+
+.msg.low  { color: #1a5cb5; }
+.msg.high { color: #b54a1a; }
+.msg.win  { color: #2a8a3e; font-weight: bold; }
+.msg.lose { color: #a00; }
+
+.tries {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #999;
+  font-family: Arial, sans-serif;
+}
+
+.history {
+  margin-top: 16px;
+  font-size: 12px;
+  color: #aaa;
+  font-family: Arial, sans-serif;
+  line-height: 1.8;
+}
+
+.restart {
+  margin-top: 14px;
+  background: transparent;
+  color: #555;
+  border: 1px solid #ccc;
+}
+
+.restart:hover { background: #f5f0e8; color: #222; }
